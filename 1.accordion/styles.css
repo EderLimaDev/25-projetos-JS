@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(23,74,129);
+    background: linear-gradient(332deg, rgba(23,74,129,1) 38%, rgba(28,83,203,1) 62%);
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 0 7%;
+   
+}
+
+.container h1 {
+    color: rgb(23,74,129);
+    font-size: 2em;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.accordion-title {
+    display: flex;
+    justify-content: space-between;
+    flex:1;
+    color: rgb(23,74,129);
+    font-weight: bolder;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.accordion {
+    width: 90%;
+    margin: auto;
+}
+
+.accordion-title i {
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.accordion-item {
+    padding: 1em;
+    border: 1px solid black;
+    border-radius: 12px;
+    margin-bottom: 0.5em;
+}
+
+.accordion-content {
+    display: none;
+}
+.accordion-item .active + .accordion-content {
+    display: block;
+}
+
+.accordion-title.active i {
+    transform: rotate(180deg);
+}
