@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 15px;
+  text-align: center;
+  background-color: forestgreen;
+}
+h1, p {
+  color: white;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.star-rating-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.bxs-star::before {
+  content: "\f006";
+  font-size: 50px;
+}
+
+.Selected-rating-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.Selected-rating-container p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.bx-star:hover {
+  cursor: pointer;
+}
+
+.bx-star::before {
+  content: "\f005";
+  color: rgb(243, 243, 86);
+  font-size: 50px;
+}
